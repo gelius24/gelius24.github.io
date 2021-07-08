@@ -20,15 +20,16 @@
   flex-direction: column;
   align-items: center;
 }
+.modal h3{
+  font-size: 1.5rem
+}
 .modal p {
+  margin-top: 14px;
   font-size: 1.4rem;
-  width: 80%;
-  white-space: pre-line;
+  width: 55%;
 }
 .modal h4 {
-  align-self: flex-start;
-  margin-left: 84px;
-  margin-top: 10px;
+  margin-top: 50px;
   font-size: 1.2rem;
 }
 .modal ul {
@@ -44,7 +45,8 @@
 }
 .modal ul li {
   margin-right: 5%;
-  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(33, 32, 41);
 }
 .modalCloseButton {
   color: white;
@@ -67,9 +69,10 @@
   }
 }
 
-/* @media (max-width: 683px){
-  .modal ul{
-    height: 100px;
+ @media (max-width: 436px){
+  .show{
+    height: 95%;
+    top: 20px;
     flex-wrap: wrap;
   }
-} */
+} 
