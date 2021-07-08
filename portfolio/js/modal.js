@@ -7,6 +7,9 @@ const openModalButtons = document.getElementsByClassName("modalButton");
 let modalBtn1 = undefined;
 let modalBtn2 = undefined;
 let modalBtn3 = undefined;
+let modalBtn4 = undefined;
+let modalBtn5 = undefined;
+let modalBtn6 = undefined;
 const CloseModalButtons = document.getElementsByClassName("modalCloseButton");
 let closeModalBtn1 = undefined;
 let closeModalBtn2 = undefined;
@@ -25,6 +28,9 @@ function idModals() {
     modal1_container = document.getElementById("modal1-container");
     modal2_container = document.getElementById("modal2-container");
     modal3_container = document.getElementById("modal3-container");
+    modal4_container = document.getElementById("modal4-container");
+    modal5_container = document.getElementById("modal5-container");
+    modal6_container = document.getElementById("modal6-container");
   }
   done1 = true;
 }
@@ -35,6 +41,9 @@ function btnId() {
     modalBtn1 = document.getElementById(`modalBtn1`);
     modalBtn2 = document.getElementById(`modalBtn2`);
     modalBtn3 = document.getElementById(`modalBtn3`);
+    modalBtn4 = document.getElementById(`modalBtn4`);
+    modalBtn5 = document.getElementById(`modalBtn5`);
+    modalBtn6 = document.getElementById(`modalBtn6`);
   }
   done2 = true;
 }
@@ -66,6 +75,18 @@ function listen() {
     modal3_container.classList.add("show");
   });
 
+  modalBtn4.addEventListener("click", () => {
+    modal4_container.classList.add("show");
+  });
+
+  modalBtn5.addEventListener("click", () => {
+    modal5_container.classList.add("show");
+  });
+
+  modalBtn6.addEventListener("click", () => {
+    modal6_container.classList.add("show");
+  });
+
   closeModalBtn1.addEventListener("click", () => {
     modal1_container.classList.remove("show");
   });
@@ -76,6 +97,18 @@ function listen() {
 
   closeModalBtn3.addEventListener("click", () => {
     modal3_container.classList.remove("show");
+  });
+
+  closeModalBtn4.addEventListener("click", () => {
+    modal4_container.classList.remove("show");
+  });
+
+  closeModalBtn5.addEventListener("click", () => {
+    modal5_container.classList.remove("show");
+  });
+
+  closeModalBtn6.addEventListener("click", () => {
+    modal6_container.classList.remove("show");
   });
 }
 
