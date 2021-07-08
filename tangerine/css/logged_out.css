@@ -1,0 +1,18 @@
+/* BANNIÈRE */
+section.banner{
+    background-color: #333;
+    color: white;
+}
+section.banner img{
+    width: 100%;
+}
+section.banner h4{
+    font-size: 2rem;
+    margin: 20px;
+}
+section.banner p{
+    font-size: 1.2rem;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    width: 70%;
+}

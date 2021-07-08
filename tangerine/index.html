@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index_slider.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <span id="burger"></span>
+        <h1><a href="/index.html">Tangerine</a></h1>
+    </header>
+    <menu id="menu">
+        <div class="menu-box">
+            <span id="close_menu">X</span>
+            <button>Devenir Client</button>
+            <button>Accès Clients</button>
+        </div>
+
+        <nav>
+            <ul class="menu">
+              <li>Produits</li>
+              <li>Service bancaires</li>
+              <li>Blogue</li>
+              <li>À propos de nous</li>
+            </ul>
+  
+            <ul class="options">
+                <li>English</li>
+                <li>Localisateur de guichets</li>
+                <li>Contactez-nous</li>
+                <li>Taux</li>
+                <li>FAQ</li>
+                <li>Commentaires</li>
+            </ul>
+
+            <ul class="laptop-options">
+                <li>Woody G <i class="fas fa-chevron-down"></i></li>
+                <li>EN <i class="far fa-globe"></i></li>
+                <li><i class="fas fa-cash-register"></i></li>
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+            </ul>
+            
+            <ul class="laptop-black-bar">
+                <li>Aperçu</li>
+                <li>Nouvelles</li>
+                <li>Opérations</li>
+                <li><NOBR>Limite de dépense</NOBR></li>
+                <li>Objectifs</li>
+                <li>Tactiques</li>
+                <ul class="money-options">
+                    <li><NOBR>Transférer de l'Argent <i class="fas fa-dollar-sign"></i></NOBR></li>
+                    <li><NOBR>Payer des factures <i class="fas fa-check"></i></NOBR></li>
+                    <li><NOBR>Envoyer de l'Argent <i class="far fa-paper-plane"></i></NOBR></li>
+                </ul>
+            </ul>
+          </nav>
+    </menu>
+    
+    
+    <!-- <div class="top-bar">
+
+    </div> -->
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1/2</div>
+      <div class="txt">Nouveauté : protégez-vous davantage avec la vérification en deux étapes</div>
+      <div class="circle"><i class="fas fa-mobile-alt"></i></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2/2</div>
+      <div class="txt">Juin est le mois de la Fierté ! Pour célébrer, notre logo affiche ses couleurs.</div>
+      <img src="https://www.tangerine.ca/Tangerine_FBE/content/Insights%20Campaigns/2021%2006%20-%20Pride%20Month/images/D_ARROW_CIRCLE.png">
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <main>
+      <section class="comptes">
+        <h4>Comptes</h4>
+        <p class="txt-m border">Ce que j'ai <span>24 000 000,08 $</span></p>
+        <p class="border margin">Voir le sommaire</p>
+
+        <p class="txt-m border">Ce que je dois <span>0,00$</span></p>
+        <p class="border">Voir le sommaire</p>
+    
+        <button>Ouvrir un compte</button>
+        <button>Relevés</button>
+    </section>
+
+    <section class="depenses">
+        <h4>Dépenses</h4>
+        <div class="border">
+            <div class="line">
+                <h6>Compte-chèques ***4242</h6>
+                <p>Compte-chèques Tangerine</p>
+            </div>
+            
+            <span>903 675, 24$</span>
+        </div>
+        <div class="border">
+            <div class="line">
+                <h6>Carte de crédit Remises ***0808</h6>
+                <p>Carte de crédit Remise Tangerine</p>
+            </div>
+            <span>0,00$</span>
+        </div>
+    </section>
+
+    <section class="epargne">
+        <h4>Épargne</h4>
+        <div class="box">
+            <div class="line">
+            <h6>Épargne</h6>
+            <p>Compte d'épargne Tangerine</p>
+            </div>
+            <span>23 096 324,68$</span>
+        </div>
+        <div class="total">
+            <h5>Total</h5>
+            <span>23 096 324,68$</span>
+        </div>
+    </section>
+
+    <section class="investissement">
+        <h4>Investissements</h4>
+        <button>Ouvrir un Compte pour investir</button>
+        <p>Les Fonds d'investissement sont offerts par Fonds d'investissement Tangerine.</p>
+    </section>
+
+    <section class="emprunts">
+        <h4>Emprunts</h4>
+        <button>Ouvrir un Compte pour emprunter</button>
+    </section>
+
+    <section class="objectif">
+        <h4>Objectifs</h4>
+        <button>Ajouter un objectif</button>
+    </section>
+
+    <section class="since">
+        <h4>Depuis que vous êtes Client</h4>
+        <div class="since-box">
+            <h6>Intérête accumulé</h6>
+            <p>200,45$</p>
+        </div>
+        <div class="since-box">
+            <h6>Frais économisés</h6>
+            <p>924,08$</p>
+        </div>
+    </section>
+
+    <section class="survol">
+        <h4>Survol</h4>
+        <div class="survol-box">
+            <h6>Inviter un ami</h6>
+            <p>Clé Orange</p>
+            <span>242424242K2</span>
+            <div class="btn-box">
+                <button>Partager</button>
+                <button>En savoir plus</button>
+            </div>
+        </div>
+        <div class="survol-box">
+            <h6>Inscription au dépôt direct de l’Agence du revenu du Canada</h6>
+            <button>Continuer</button>
+        </div>
+
+        <div class="survol-box">
+            <h6>Établir un PÉA</h6>
+            <p>Mettez en place un Programme d'épargne automatique pour vous aider à épargner sans avoir à y penser.</p>
+            <button>Commencer</button>
+        </div>
+        <img style="width: 120px;" src="https://www.tangerine.ca/app/assets/images/cdic-badge-bilingual.png">
+        <p>Les fonds communs de placement ne sont pas assurés par la SADC.</p>
+    </section>
+  </main>
+  
+  <footer>
+      <div class="foot-menu">
+
+        <div class="icon">
+            <i class="fas fa-home"></i>
+            <p>Aperçu</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <p>Opérations</p>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-plus-circle plus_icon"></i>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-cash-register"></i>
+            <p>Guichets</p>
+        </div>
+        
+        <div class="icon">
+            <i class="fas fa-envelope"></i>
+            <p>Babillard</p>
+        </div>
+      </div>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/index_slider.js"></script>
+</body>
+</html>

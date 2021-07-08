@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Woody Gelius</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/skills.css"></link>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <div class="h-box">
+        <i class="far fa-envelope"></i>
+        <p>myMail@hotmail.com</p>
+      </div>
+      <div class="h-box">
+        <i class="fas fa-scroll"></i>
+        <p>Mon CV</p>
+      </div>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-linkedin"></i>
+    </header>
+
+    <div class="intro-box">
+      <div class="intro__textContainer">
+        <p class="intro__text" id="intro1"></p>
+        <h1 id="woody"></h1>
+      </div>
+    </div>
+        <!-- DÉBUT SECTION PROJETS -->
+
+        <section class="projets">
+          <h2>Mes projets : </h2>
+          
+          <div class="projets-box">
+            
+            <div class="projet-box">
+              <h3>Netflix</h3>
+              <img src="https://www.shortlist.com/media/imager/202104/51892-original.jpg">
+              <button class="modalButton">Details</button>
+              <a target="_blank" href="https://netflix-full-build-29831.web.app/">Lien vers le projet</a>
+              <!-- FENÊTRE MODAL -->
+              <div class="modal-container">
+                <!-- id='modal1-container' -->
+                <div class="modal">
+                  <button class="modalCloseButton">X</button>
+                  <h3>Une copy du site Netflix</h3>
+                  <p>
+                    J'ai créer ce projet en suivant un tutoriel sur Youtube.
+                    Il est possible de se créer un compte et d'acheter un abonnement (en rentrant des de fausses donnés) via stripe et firebase.
+                  </p>
+                  <h4>J'ai utilisé les technologies suivantes :</h4>
+                  <ul>
+                    <li>React JS</li>
+                    <li>Redux</li>
+                    <li>React Router</li>
+                    <li>Firebase</li>
+                    <li>Stripe</li>
+                    <li>The movie Database API</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="projet-box">
+              <h3>Tangerine</h3>
+              <img src="img/tg_bank.jpg">
+              <button class="modalButton">Details</button>
+              <a target="_blank" href="https://gelius24.github.io/tangerine">Lien vers le projet</a>
+              <div class="modal-container">
+                <!-- id='modal1-container' -->
+                <div class="modal">
+                  <button class="modalCloseButton">X</button>
+                  <h3>Une copy du site de la banque Tangerine</h3>
+                  <p>
+                    J'ai créer un site web identique à celle de la banque Tangerine.
+                  </p>
+                  <h4>J'ai utilisé les technologies suivantes :</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="projet-box">
+              <h3>Google</h3>
+              <img src="img/google.png">
+              <button class="modalButton">Details</button>
+              <a href="https://woogle.vercel.app/" target='_blank'>Lien vers le projet</a>
+              <div class="modal-container">
+                <!-- id='modal1-container' -->
+                <div class="modal">
+                  <button class="modalCloseButton">X</button>
+                  <h3>Une copy du site de la banque Tangerine</h3>
+                  <p>
+                    Ce projet imitte le moteur de recherche google. J'ai utilisé
+                    l'API de google pour donner les résultats des recherche.
+                  </p>
+                  <h4>J'ai utilisé les technologies suivantes :</h4>
+                  <ul>
+                    <li>Next.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>Google API</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="projet-box">
+              <h3>Covid 19 Tracker</h3>
+              <img src="img/covid_tracker.jpg">
+              <button class="modalButton">Details</button>
+              <a href="https://covid19-tracker-94112.web.app/" target='_blank'>Lien vers le projet</a>
+            </div>
+    
+            <div class="projet-box">
+              <h3>Facebook</h3>
+              <img src="img/fb.png">
+              <button class="modalButton">Details</button>
+              <a href="https://facebook-clone-43c89.web.app/" target='_blank'>Lien vers le projett</a>
+            </div>
+
+
+            <div class="projet-box">
+              <h3>Amazon</h3>
+              <img src="https://www.leparisien.fr/resizer/yTjMePwd6TrYtVrkrbBc1wT9Pug=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/TAXGBPWFOYXCF62RKPF2FTFZLM.jpg">
+              <button class="modalButton">Details</button>
+              <a href="https://facebook-clone-43c89.web.app/" target='_blank'>Lien vers le projet</a>
+            </div>
+            
+    
+            <div class="projet-box">
+              <h3>TikTok</h3>
+              <img src="https://9to5mac.com/wp-content/uploads/sites/6/2021/01/TikTok.jpg?quality=82&strip=all&w=1600">
+              <button class="modalButton">Details</button>
+              <a href="https://tiktok-clone-af4ae.web.app/" target='_blank'>Lien vers le projet</a>
+            </div>
+    
+          </div>
+        </section>
+        <!-- SKILLS SECTION -->
+
+        <section class="skills">
+          <h2>Mes Compétences : </h2>
+          <div class="skills-box">
+    
+            <div class="skill-box">
+              <h3>HTML5, CSS & JS</h3>
+              <img src="https://www.redemultilink.com.br/wp-content/uploads/2020/07/html5-css-javascript-significados-1024x576.jpg">
+            </div>
+  
+            
+            <div class="skill-box">
+              <h3>React.js</h3>
+              <img src="img/react.png">
+            </div>
+    
+            <div class="skill-box">
+              <h3>Redux</h3>
+              <img src="img/redux-logo.jpg">
+            </div>
+
+            <div class="skill-box">
+              <h3>Bootstrap</h3>
+              <img src="img/bootstrap-logo.png">
+            </div>
+    
+            <div class="skill-box">
+              <h3>Firebase</h3>
+              <img src="img/firebase.png">
+            </div>
+
+            <div class="skill-box">
+              <h3>Wordpress</h3>
+              <img src="img/wp.jpg">
+            </div>
+
+            <div class="skill-box">
+              <h3>GIT</h3>
+              <img src="https://res.cloudinary.com/practicaldev/image/fetch/s---Xg28U2u--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/q7uy4yxekcljpr70p2xk.png">
+            </div>
+            
+            <div class="skill-box">
+              <h3>Stripe</h3>
+              <img src="https://www.panierdachat.com/wp-content/uploads/2016/07/vendre-en-ligne-avec-stripe.png">
+            </div>
+
+            <div class="skill-box">
+              <h3>Figma</h3>
+              <img src="https://miro.medium.com/max/1400/1*yaZ-u-EiZ6kanJP9zPFXVQ.jpeg">
+            </div>
+    
+          </div>
+        </section>
+        
+        <footer>Codé par Woody Gelius - 2021</footer>
+        <script src="js/modal.js"></script>
+        <script src="js/write_animation.js"></script>
+</body>
+</html>

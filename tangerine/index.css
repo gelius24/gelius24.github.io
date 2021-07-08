@@ -1,0 +1,158 @@
+main{
+    margin: 30px 40px;
+}
+section h4{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+section p {
+    padding: 20px;
+}
+section.comptes p.border{
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+section.comptes p.txt-m{
+    font-size: 1.3rem;
+}
+section.comptes p.margin{
+    margin-bottom: 10px;
+}
+section.comptes p span{
+    margin-left: 38%;
+}
+section.comptes button{
+    font-size: 1.1rem;
+    color:gray;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 30px 5px;
+}
+section.comptes button:hover{
+    color: white;
+    background-color: #EA7024;
+}
+/**/
+/* DÉPENSES */
+section.depenses .border{
+    height: 80px;
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 14px;
+    border-bottom: 1px lightgray solid;
+}
+.border{
+    display: flex;
+    justify-content: space-between;
+}
+h6{
+    font-size: 1.1rem;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+}
+.border p{
+    padding: 0;
+}
+/**/
+section.epargne p{
+    padding: 0;
+    margin-bottom: 20px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px lightgray solid;
+}
+.total{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+}
+/**/
+section.investissement button{
+    margin-bottom: 5px;
+}
+section.investissement p{
+    padding: 0;
+    color: grey;
+    width: 95%;
+    font-size: .9rem;
+}
+/**/
+/**/
+section.objectif{
+    margin-bottom: 40px;
+}
+/**/
+section.since .since-box{
+    border: 2px lightgray solid;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.since .since-box h6{
+    margin-left: 10px;
+}
+/**/
+/* Survol */
+.survol{
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.survol-box{
+    display: flex;
+    flex-direction: column;
+    border: 2px lightgray solid;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-bottom: 15px;
+}
+.survol-box span{
+    color: #EA7024;
+    font-size: 1.7rem;
+}
+/**/
+/* BOTTOM MENU*/
+footer{
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+}
+.foot-menu{
+    height: 100%;
+    display: flex;
+}
+.icon{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon:hover{
+    border-top: 2px #EA7024 solid;
+}
+.plus_icon{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #EA7024;
+}
+
+@media screen and (min-width: 1190px) {
+    
+}
