@@ -23,7 +23,7 @@ section.projets{
   border-radius: 5px;
 }
 .projet-box h3{
-  font-size: 1.rem;
+  font-size: 1.7rem;
   margin-bottom: 10px;
 }
 .projet-box img {
@@ -57,4 +57,23 @@ section.projets{
   cursor: pointer;
   border: none;
   border-radius: 5px;
+}
+
+span#G{
+  color: rgba(0, 0, 255, 0.877);
+}
+span#o1{
+  color: rgba(255, 0, 0, 0.877);
+}
+span#o2{
+  color: rgba(255, 255, 0, 0.877);
+}
+span#g{
+  color: rgba(0, 0, 255, 0.877);
+}
+span#l{
+  color: rgba(0, 128, 0, 0.877);
+}
+span#e{
+  color: rgba(255, 0, 0, 0.877);
 }
