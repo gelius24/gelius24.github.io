@@ -37,15 +37,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 3%;
   margin-top: 30px;
   background-color: #324b66;
   list-style: none;
-  width: 80%;
+  width: fit-content;
   height: 100px;
   font-size: 1.28rem;
 }
 .modal ul li {
-  margin-right: 5%;
+  
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(33, 32, 41);
 }
@@ -69,6 +70,14 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 680px){
+  .modal ul{
+    height: fit-content;
+    padding: 30px;
+  }
+}
+
 
  @media (max-width: 436px){
   .show{
