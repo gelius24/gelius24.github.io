@@ -5,10 +5,9 @@
 .show {
   display: block;
   position: fixed;
-  top: 25%;
-  left: 20%;
-  height: 60%;
-  width: 60%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,33 +19,34 @@
   flex-direction: column;
   align-items: center;
 }
-.modal h3{
-  font-size: 1.5rem;
-  max-width: 90%;
+.modal h3 {
+  font-size: 1.3rem;
 }
 .modal p {
   margin-top: 14px;
-  font-size: 1.4rem;
-  width: 55%;
+  font-size: 1.2rem;
+  text-align: center;
 }
 .modal h4 {
-  margin-top: 50px;
-  font-size: 1.2rem;
+  margin-top: 26px;
+  text-align: center;
+  font-size: 1.1rem;
 }
 .modal ul {
+  list-style: none;
+  background-color: #324b66;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3%;
+  gap: 3vw;
   margin-top: 30px;
-  background-color: #324b66;
-  list-style: none;
-  width: fit-content;
-  height: 100px;
+  padding: 20px 10px;
   font-size: 1.28rem;
+  width: fit-content;
+  height: fit-content;
 }
 .modal ul li {
-  
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(33, 32, 41);
 }
@@ -54,41 +54,48 @@
   color: white;
   background-color: rgb(33, 32, 41);
   border: none;
-  font-size: 40px;
+  font-size: 28px;
+  /* font-size: 40px; */
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   cursor: pointer;
 }
 
-@media (max-width: 1328px){
-  .show{
-    width: 95vw;
-    left: 2.5%;
+@media (min-width: 400px) {
+  .show {
+    height: 95vh;
+    top: 2%;
   }
-  .modal ul{
+  .modal ul {
+    flex-direction: row;
     flex-wrap: wrap;
+  }
+  .modalCloseButton {
+    font-size: 40px;
   }
 }
 
-@media (max-width: 680px){
-  .modal ul{
+@media (min-width: 768px) {
+  .show {
+    left: 5%;
+    top: 10%;
+    width: 90vw;
+    max-width: 1000px;
+    height: 80vh;
+    max-height: 500px;
+  }
+  .modal ul {
+    width: 80%;
     height: fit-content;
-    padding: 30px;
+    gap: 16px;
   }
 }
 
-
- @media (max-width: 436px){
-  .show{
-    height: 95%;
-    top: 20px;
-    flex-wrap: wrap;
+@media (min-width: 1140px) {
+  .show {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
-  .modal p{
-    width: 90%;
-  }
-  .modal h4{
-    width:80%;
-  }
-} 
+}
