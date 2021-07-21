@@ -27,14 +27,15 @@ function writeIntro(){
       x++;
       y = 0;
       
-      // mots suivant
+
       if (x == introTxt.length) {
         intro1.innerHTML = intro_write.join("");
+        setTimeout(writeName, 600)
         return stopWrite_intro = true
       }
     }
   }
-  setTimeout(writeIntro, 59);
+  setTimeout(writeIntro, 40);
 }
 
 
@@ -65,8 +66,6 @@ function writeName() {
 }
 
 writeIntro();
-writeName()
-
 
 function addFadeClass(){
   projets.classList.add('fade-in-animation')
