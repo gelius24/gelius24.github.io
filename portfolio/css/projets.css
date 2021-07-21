@@ -81,6 +81,7 @@ section.projets {
 
   .fade-in-animation{
     animation: fadeAnimation 4s;
+    animation: fadeAnimationSafari 4s;
     visibility: visible !important;
   }
 
@@ -89,7 +90,7 @@ section.projets {
     100%{opacity: 100%;}
   }
 
-  @-webkit-keyframes fadeAnimation {
+  @-webkit-keyframes fadeAnimationSafari {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
   }
