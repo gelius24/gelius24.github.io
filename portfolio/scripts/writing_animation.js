@@ -13,7 +13,6 @@ let y = 0;
 const projets = document.getElementById('projets')
 const skills = document.getElementById('skills')
 
-
 function writeIntro(){
   if (x < introTxt.length && !stopWrite_intro){
     //si longeur mot en cour plus grand que x
@@ -35,7 +34,7 @@ function writeIntro(){
       }
     }
   }
-  setTimeout(writeIntro, 40);
+  setTimeout(writeIntro, 60);
 }
 
 
@@ -56,13 +55,13 @@ function writeName() {
         j = 0;
         // mots suivant
         if (i == txt.length) {
-          woody.innerHTML = write.join("");
-          setTimeout(addFadeClass, 300)
+          // woody.innerHTML = write.join("") + "|";
+          setTimeout(addFadeClass, 50)
           return stopWrite = true
         }
       }
     }
-    setTimeout(writeName, 150);
+    setTimeout(writeName, 330);
 }
 
 writeIntro();
