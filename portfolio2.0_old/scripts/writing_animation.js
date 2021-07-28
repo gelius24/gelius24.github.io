@@ -18,7 +18,7 @@ function writeIntro(){
     //si longeur mot en cour plus grand que x
     if (introTxt[x].length > y) {
       intro_write.push(introTxt[x][y]);
-      intro1.innerHTML = intro_write.join("") + "|";
+      intro1.innerHTML = intro_write.join("") //+ "|";
       y++;
     }
     // quand longeur du mots en cour
@@ -34,7 +34,7 @@ function writeIntro(){
       }
     }
   }
-  setTimeout(writeIntro, 60);
+  setTimeout(writeIntro, 10);
 }
 
 
@@ -46,7 +46,7 @@ function writeName() {
       if (txt[i].length > i) {
         // console.log("add a letter :", txt[i][j]);
         write.push(txt[i][j]);
-        woody.innerHTML = write.join("") + "|";
+        woody.innerHTML = write.join("") //+ "|";
         j++;
       }
   
@@ -55,13 +55,12 @@ function writeName() {
         j = 0;
         // mots suivant
         if (i == txt.length) {
-          // woody.innerHTML = write.join("") + "|";
           setTimeout(addFadeClass, 50)
           return stopWrite = true
         }
       }
     }
-    setTimeout(writeName, 330);
+    setTimeout(writeName, 220);
 }
 
 writeIntro();

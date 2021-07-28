@@ -65,6 +65,32 @@ header i {
   font-size: 40px;
 }
 
+#woody{
+  position: relative;
+}
+#woody::after,
+#woody::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  right: 0;
+  
+}
+#woody::before{
+  background-color: #141b2c;
+  height: 41px;
+  animation: write 3s steps(12) 1s forwards;
+}
+#woody::after{
+  width: .125em;
+  background-color: white;
+  animation: write 3s steps(12) 1s forwards,
+  blink 600ms ease-out 0s 12 forwards
+  ;
+}
+
 footer {
   font-size: 1.1rem;
   margin-top: 50px;
@@ -73,6 +99,20 @@ footer {
   display: grid;
   place-content: center;
 }
+
+
+
+@keyframes write{
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
 
 @media (min-width: 500px) {
   header {

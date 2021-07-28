@@ -1,136 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <title>Portfolio - Woody Gelius</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="css/projets.css">
-    <link rel="stylesheet" href="css/modals.css">
-    <link rel="stylesheet" href="css/skills.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="modals.css">
+    <script src="scripts/modals.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="topbar-box" style="cursor: pointer;">
+        <div class="header__box">
           <i class="far fa-envelope"></i>
           <p style="margin-left: 6px; cursor: default;">gelius24@hotmail.com</p>
         </div>
-        <div class="topbar-box" style="cursor: pointer;">
-            <img src="img/sheet-logo.svg">
-          <a href="../CV-WoodyGelius.pdf" target="_blank">Mon CV</a>
-        </div>
         <a href="https://github.com/gelius24" target="_blank"><i class="fab fa-github"></i></a>
-        <!-- <i class="fab fa-linkedin"></i> -->
+        <div class="header__box">
+            <img src="img/sheet-logo.svg">
+            <a href="../CV-WoodyGelius.pdf" target="_blank">Mon CV</a>
+          </div>
       </header>
-  
+      <!-- intro -->
       <div class="intro-box">
         <div class="intro__container">
-          <p class="intro__text" id="intro__text"></p>
-          <h1 id="woody"></h1>
+          <p class="intro__text" id="intro__text">Bonjour, je suis un dévloppeur web front-end autodidacte. Je m'appelle</p>
+          <h1 id="woody">Woody Gelius</h1>
         </div>
       </div>
-      <!-- DÉBUT SECTION PROJETS -->
-      <section class="projets" id="projets">
-        <h2>Mes projets : </h2>
-        
-        <div class="projets-box">
-
-          <div class="projet-box">
+      <!-- PROJETS -->
+      <section class="projets">
+        <h2>MES PROJETS : </h2>
+        <div class="projet">
             <h3>Amazon</h3>
             <img src="https://www.leparisien.fr/resizer/yTjMePwd6TrYtVrkrbBc1wT9Pug=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/TAXGBPWFOYXCF62RKPF2FTFZLM.jpg">
-            <button class="modalButton">Details</button>
-            <a href="https://amazon-clone-gelius24.vercel.app" target='_blank'>Lien vers le projet</a>
-            <!-- FENÊTRE MODAL -->
-            <div class="modal-container">
-              <div class="modal">
-                <button class="modalCloseButton">X</button>
-                <h3>Amazon</h3>
-                <p>
-                  C'est une copie du site amazon.com. Il y est possible de faire des achat sur une page stripe checkout.
-                  J'ai réalisé ce projet en suivant un tutoriel sur Youtube.
-                </p>
-                <h4>J'ai utilisé les technologies suivantes :</h4>
-                <ul>
-                  <li>Next.js (NextAuth & Next router)</li>
-                  <li>Redux</li>
-                  <li>Tailwind CSS</li>
-                  <li>Fake Store API</li>
-                  <li>Firebase (Firestore)</li>
-                  <li>Stripe (Checkout Page, Webhook)</li>
-                </ul>
+            <div class="projet__options">
+              <h3 class="h3-2">Amazon</h3>
+              <p>Copie du site amazon programmé avec Next.js. Il y est possible d'y faire des achats via stripe (Il faut mettre 4242 plusieurs fois comme numéro de carte de crédit pour simuler un paiment réussis)</p>
+              <div class="btns">
+                <button class="modalButton">Details</button>
+                <a href="https://github.com/gelius24/amazon-clone" target="_blank">Code</a>
+                <a href="https://amazon-clone-gelius24.vercel.app" target='_blank'>Lien vers le projet</a>
               </div>
             </div>
-          </div>
-          
-          <div class="projet-box">
-            <h3 style='color: rgba(255, 0, 0, 0.87);'>Netflix</h3>
-            <img src="img/netflix-project1.png">
-            <button class="modalButton">Details</button>
-            <a target="_blank" href="https://netflix-full-build-29831.web.app/">Lien vers le projet</a>
             <!-- FENÊTRE MODAL -->
             <div class="modal-container">
-              <div class="modal">
-                <button class="modalCloseButton">X</button>
-                <h3>Une copie du site Netflix</h3>
-                <p>
-                  J'ai créer ce projet en suivant un tutoriel sur Youtube.
-                  Il est possible de se créer un compte et d'acheter un abonnement (en rentrant des de fausses donnés) via stripe et firebase.
-                </p>
-                <h4>J'ai utilisé les technologies suivantes :</h4>
-                <ul>
-                  <li>React JS</li>
-                  <li>Redux</li>
-                  <li>React Router</li>
-                  <li>Firebase</li>
-                  <li>Stripe</li>
-                  <li>The movie Database API</li>
-                </ul>
+                <div class="modal">
+                  <button class="modalCloseButton">X</button>
+                  <h3>Amazon</h3>
+                  <p>
+                    C'est une copie du site amazon.com. Il y est possible de faire des achat sur une page stripe checkout.
+                    J'ai réalisé ce projet en suivant un tutoriel sur Youtube.
+                  </p>
+                  <h4>J'ai utilisé les technologies suivantes :</h4>
+                  <ul>
+                    <li>Next.js (NextAuth & Next router)</li>
+                    <li>Redux</li>
+                    <li>Tailwind CSS</li>
+                    <li>Fake Store API</li>
+                    <li>Firebase (Firestore)</li>
+                    <li>Stripe (Checkout Page, Webhook)</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="projet-box">
+        <div class="projet">
+            <h3 style="color: #e50914;">Netflix</h3>
+            <img src="img/netflix-project1.png">
+            <div class="projet__options">
+              <h3 class="h3-2" style="color: #e50914;">Netflix</h3>
+              <p>Copie du site web de Netflix.
+                Il y est possible de se créer un compte et d'acheter un abonnement via stripe (Il faut mettre 4242 plusieurs fois comme numéro de carte de crédit pour simuler un paiment réussis).</p>
+                <div class="btns">
+                  <button class="modalButton">Details</button>
+                  <a href="https://github.com/gelius24/netflix-full-build" target="_blank">Code</a>
+              <a href="https://netflix-full-build-29831.web.app" target='_blank'>Lien vers le projet</a>
+                </div>
+            </div>
+            <!-- FENÊTRE MODAL -->
+            <div class="modal-container">
+                <div class="modal">
+                  <button class="modalCloseButton">X</button>
+                  <h3>Une copie du site Netflix</h3>
+                  <p>
+                    Copie du site web de Netflix.
+                    Il est possible de se créer un compte et d'acheter un abonnement (en rentrant des de fausses donnés) via stripe et firebase.
+                  </p>
+                  <h4>J'ai utilisé les technologies suivantes :</h4>
+                  <ul>
+                    <li>React JS</li>
+                    <li>Redux</li>
+                    <li>React Router</li>
+                    <li>Firebase</li>
+                    <li>Stripe</li>
+                    <li>The movie Database API</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+
+        <div class="projet">
             <h3><span id="G">G</span><span id="o1">o</span><span id="o2">o</span id="g"><span id="g">g</span><span id="l">l</span><span id="e">e</span></h3>
             <img src="img/google.png">
-            <button class="modalButton">Details</button>
-            <a href="https://woogle.vercel.app/" target='_blank'>Lien vers le projet</a>
-             <!-- FENÊTRE MODAL -->
-            <div class="modal-container">
-              <div class="modal">
-                <button class="modalCloseButton">X</button>
-                <h3>Une copie de Google</h3>
-                <p>
-                  Ce projet imitte le moteur de recherche google. J'ai utilisé
-                  l'API de google pour donner les résultats des recherches.
-                </p>
-                <h4>J'ai utilisé les technologies suivantes :</h4>
-                <ul>
-                  <li>Next.js</li>
-                  <li>Tailwind CSS</li>
-                  <li>Google API</li>
-                </ul>
-              </div>
+            <div class="projet__options">
+              
+              <div class="h3-2"><span id="G">G</span><span id="o1">o</span><span id="o2">o</span id="g"><span id="g">g</span><span id="l">l</span><span id="e">e</span></div>
+              <p>Ce projet imitte le moteur de recherche google. J'ai utilisé
+                l'API de google pour donner les résultats de recherches.</p>
+                <div class="btns">
+                  <button class="modalButton">Details</button>
+                  <a href="https://github.com/gelius24/woogle" target="_blank">Code</a>
+                <a href="https://woogle.vercel.app" target='_blank'>Lien vers le projet</a>
+                </div>
             </div>
-          </div>
-  
-          <div class="projet-box">
+            <!-- FENÊTRE MODAL -->
+            <div class="modal-container">
+                <div class="modal">
+                  <button class="modalCloseButton">X</button>
+                  <h3>Une copie de Google</h3>
+                  <p>
+                    Ce projet imitte le moteur de recherche google. J'ai utilisé
+                    l'API de google pour donner les résultats des recherches.
+                  </p>
+                  <h4>J'ai utilisé les technologies suivantes :</h4>
+                  <ul>
+                    <li>Next.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>Google API</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+
+        <div class="projet">
             <h3 style='color: #EA7024;'>Tangerine</h3>
             <img src="img/tangerine.png">
-            <button class="modalButton">Détails</button>
+            <div class="projet__options">
+                <div class="h3-2" style='color: #EA7024;'>Tangerine</div>
+                <p>J'ai créer un site web identique à celui de la banque Tangerine.</p>
+                <div class="btns">
+                  <button class="modalButton">Détails</button>
+                  <a href="https://github.com/gelius24/gelius24.github.io/tree/main/tangerine">Code</a>
             <a target="_blank" href="https://gelius24.github.io/tangerine">Lien vers le projet</a>
+                </div>
+            </div>
             <!-- FENÊTRE MODAL -->
             <div class="modal-container">
               <div class="modal">
                 <button class="modalCloseButton">X</button>
                 <h3>Une copie du site de la banque Tangerine</h3>
-                <p>
-                  J'ai créer un site web identique à celle de la banque Tangerine.
-                </p>
+                <p>J'ai créer un site web identique à celui de la banque Tangerine.</p>
                 <h4>J'ai utilisé les technologies suivantes :</h4>
                 <ul>
                   <li>HTML</li>
@@ -140,58 +164,20 @@
               </div>
             </div>
           </div>
-  
-          <div class="projet-box">
-            <h3>Covid 19 Tracker</h3>
-            <img src="img/covid_project1.png">
-            <button class="modalButton">Détails</button>
-            <a href="https://covid19-tracker-94112.web.app/" target='_blank'>Lien vers le projet</a>
-            <!-- FENÊTRE MODAL -->
-            <div class="modal-container">
-              <div class="modal">
-                <button class="modalCloseButton">X</button>
-                <h3>Graphique Covid</h3>
-                <p>
-                  Interface de statistique des cas de covid dans le monde.
-                </p>
-                <h4>J'ai utilisé les technologies suivantes :</h4>
-                <ul>
-                  <li>disease.sh API</li>
-                  <li>React</li>
-                  <li>Chart.js</li>
-                  <li>numeral.js</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <div class="projet-box">
-            <h3>Facebook</h3>
-            <img src="img/fb.png">
-            <button class="modalButton">Détails</button>
-            <a href="https://facebook-clone-43c89.web.app/" target='_blank'>Lien vers le projet</a>
-            <!-- FENÊTRE MODAL -->
-            <div class="modal-container">
-              <div class="modal">
-                <button class="modalCloseButton">X</button>
-                <h3>Facebook</h3>
-                <p>
-                  Copie du site de facebook programmé avec React.
-                </p>
-                <h4>J'ai utilisé les technologies suivantes :</h4>
-                <ul>
-                  <li>React JS</li>
-                  <li>CSS</li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
-          <div class="projet-box">
+          <div class="projet">
             <h3>Reddit</h3>
             <img src="img/reddit.png">
-            <button class="modalButton">Détails</button>
+            <div class="projet__options">
+                <div class="h3-2">Reddit</div>
+                <p>Copie de la page d'acceuil reddit sur un compte ne suivant aucun contenu. Ce projet m'a été utile pour codé
+                    un site web réactif.</p>
+                    <div class="btns">
+                      <button class="modalButton">Détails</button>
+                      <a href="https://github.com/gelius24/gelius24.github.io/tree/main/reddit">Code</a>
             <a href="https://gelius24.github.io/reddit" target='_blank'>Lien vers le projet</a>
+                    </div>
+            </div>
             <!-- FENÊTRE MODAL -->
             <div class="modal-container">
               <div class="modal">
@@ -209,77 +195,8 @@
               </div>
             </div>
           </div>
-  
-        </div>
       </section>
 
-      <!-- SKILLS SECTION -->
-      <section class="skills" id="skills">
-        <h2 style="font-size: 37px;">Mes Compétences : </h2>
-        <div class="skills-box">
-  
-          <div class="skill-box">
-            <h3>HTML5, CSS & JS</h3>
-            <img src="https://www.redemultilink.com.br/wp-content/uploads/2020/07/html5-css-javascript-significados-1024x576.jpg">
-          </div>
-
-          
-          <div class="skill-box">
-            <h3>React.js</h3>
-            <img src="img/react.png">
-          </div>
-
-          <div class="skill-box">
-            <h3>Next.js</h3>
-            <img src="https://miro.medium.com/max/1838/1*2tmzU7bve-VlTkOMWsk_Hw.jpeg">
-          </div>
-  
-          <div class="skill-box">
-            <h3>Redux</h3>
-            <img src="img/redux-logo.jpg">
-          </div>
-
-          <div class="skill-box">
-            <h3>Bootstrap</h3>
-            <img src="img/bootstrap-logo.png">
-          </div>
-
-          <div class="skill-box">
-            <h3>Tailwind CSS</h3>
-            <img src="https://cms-assets.tutsplus.com/uploads/users/30/posts/33545/preview_image/tailwind-pre.png">
-          </div>
-  
-          <div class="skill-box">
-            <h3>Firebase</h3>
-            <img src="img/firebase.png">
-          </div>
-
-          <div class="skill-box">
-            <h3>Wordpress</h3>
-            <img src="img/wp.jpg">
-          </div>
-
-          <div class="skill-box">
-            <h3>GIT</h3>
-            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s---Xg28U2u--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/q7uy4yxekcljpr70p2xk.png">
-          </div>
-          
-          <div class="skill-box">
-            <h3>Stripe</h3>
-            <img src="https://www.panierdachat.com/wp-content/uploads/2016/07/vendre-en-ligne-avec-stripe.png">
-          </div>
-
-          <div class="skill-box">
-            <h3>Figma</h3>
-            <img src="https://miro.medium.com/max/1400/1*yaZ-u-EiZ6kanJP9zPFXVQ.jpeg">
-          </div>
-  
-        </div>
-      </section>
-
-      <footer>Codé par Woody Gelius - 2021</footer>
-      <script src="scripts/writing_animation.js"></script>
-      <!-- <script src="scripts/modal.js"></script> -->
-      <script src="scripts/modal2.js"></script>
+      <footer>Woody Gelius - 2021</footer>
 </body>
 </html>

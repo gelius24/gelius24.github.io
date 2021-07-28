@@ -1,6 +1,6 @@
 section.projets {
   border-top: 0.1px #4c585e solid;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .projets-box {
@@ -80,38 +80,9 @@ span#e {
 
 .fade-in-animation {
   animation: fadeAnimation 4s;
-  -o-animation: fadeAnimation 4s;
-  -moz-animation: fadeAnimation 4s;
-  -webkit-animation: fadeAnimation 4s;
   visibility: visible !important;
 }
 
-@-moz-keyframes fadeAnimation {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@-webkit-keyframes fadeAnimation {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@-o-keyframes fadeAnimation {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 
 @keyframes fadeAnimation {
   0% {
