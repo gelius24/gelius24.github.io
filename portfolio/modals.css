@@ -29,9 +29,13 @@
     font-size: 1.3rem;
   }
   .modal p {
-      margin-top: 10px;
+    display: none;
+    margin-top: 10px;
     font-size: 1.2rem;
     text-align: center;
+  }
+  .show_p{
+    display: block !important;
   }
   .modal h4 {
     margin-top: 26px;
