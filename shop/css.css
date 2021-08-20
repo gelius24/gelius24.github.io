@@ -96,3 +96,11 @@ footer {
   width: 100%;
   bottom: -30px;
 }
+
+@media (max-width: 555px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, 49%);
+    row-gap: 15px;
+    place-items: center;
+  }
+}
