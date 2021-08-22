@@ -62,7 +62,6 @@ select{
   margin-bottom: 40px;
   place-content: center;
   /* place-items: center; */
-  border: 1px red solid;
   row-gap: 15px;
   column-gap: 10px;
 }
@@ -106,14 +105,16 @@ footer {
 @media (max-width: 555px) {
   .products {
     grid-template-columns: repeat(auto-fit, 49%);
-    row-gap: 15px;
+    
     place-items: center;
   }
 }
 
 @media (min-width: 768px) {
   .products{
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(auto-fit, 240px);
+    row-gap: 18px;
+    column-gap: 16px;
   }
   
 }
