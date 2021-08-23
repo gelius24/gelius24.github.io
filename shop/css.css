@@ -105,7 +105,12 @@ footer {
 @media (max-width: 555px) {
   .products {
     grid-template-columns: repeat(auto-fit, 49%);
-    
+    place-items: center;
+  }
+}
+@media (max-width: 498px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, 85%);
     place-items: center;
   }
 }
