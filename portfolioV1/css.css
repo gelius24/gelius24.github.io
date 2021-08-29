@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  font-family: "Share Tech Mono", monospace;
+}
+body {
+  background-color: #283747;
+  color: white;
+}
+section h2 {
+  text-align: center;
+  font-size: 38px;
+  margin-top: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+span#G {
+  color: rgba(0, 0, 255, 0.877);
+}
+span#o1 {
+  color: rgba(255, 0, 0, 0.877);
+}
+span#o2 {
+  color: rgba(255, 255, 0, 0.877);
+}
+span#g {
+  color: rgba(0, 0, 255, 0.877);
+}
+span#l {
+  color: rgba(0, 128, 0, 0.877);
+}
+span#e {
+  color: rgba(255, 0, 0, 0.877);
+}
+/* HEADER */
+header {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.212);
+  height: 130px;
+  font-size: 1.8rem;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+}
+header i {
+  margin-top: 4px;
+  cursor: pointer;
+}
+.topbar-box p {
+  word-spacing: -8px;
+}
+/* HEADER */
+
+/* INTRO */
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 40px auto;
+  padding: 10px 6px;
+  border-radius: 5px;
+  width: 95%;
+  max-width: 900px;
+  height: 100vw;
+  max-height: 150px;
+  background-color: #141b2c;
+}
+.intro__container p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.intro__container h1 {
+  font-size: 40px;
+}
+#woody {
+  position: relative;
+}
+#woody::after,
+#woody::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  right: 0;
+}
+#woody::before {
+  background-color: #141b2c;
+  height: 43px;
+  animation: write 3s steps(12) 1s forwards;
+}
+#woody::after {
+  width: 0.125em;
+  background-color: white;
+  animation: write 3s steps(12) 1s forwards, blink 600ms ease-out 0s 12 forwards;
+}
+
+@keyframes write {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+/* INTRO */
+
+/* PROJETS */
+section.projets {
+  border-top: 0.1px #141b2c2d solid;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.projet {
+  border: 0.1px #4c585ec4 solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.projet img {
+  width: 85%;
+  max-width: 320px;
+  height: 85%;
+  max-height: 227px;
+  /* object-fit: contain; */
+}
+.projet p {
+  padding-left: 20px;
+}
+
+.projet__options {
+  width: 85%;
+  max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.projet__options p {
+  display: none;
+}
+.projet a,
+.projet button {
+  font-size: 1.1rem;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+.projet a:hover,
+.projet button:hover{
+  background-color: rgba(0, 0, 0, 0.74);
+  color: white;
+}
+h3{
+  margin-bottom: 10px;
+}
+.h3-2 {
+  display: none;
+}
+.btns{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  padding: 0 2px;
+}
+/**/
+
+footer{
+  background-color: rgba(0, 0, 0, 0.123);
+  margin-top: 20px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1116px) {
+  .btns{
+    justify-content: space-evenly;
+    gap: 6px;
+  }
+}
+
+@media (min-width: 633px) {
+  header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+}
+
+@media (min-width: 676px) {
+  h2 {
+    width: 100%;
+  }
+  section.projets {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .projet {
+    width: 48%;
+  }
+  .projet__options {
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1116px) {
+  .projet {
+    width: 95vw;
+    max-width: 1000px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  h3 {
+    display: none;
+  }
+  .h3-2 {
+    display: block;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .projet__options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .projet__options p {
+    width: 520px;
+    /* min-width: 500px;
+    max-width: 600px; */
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+  .projet button {
+    display: block;
+    width: fit-content;
+    /* margin: 0 auto; */
+    
+  }
+  .projet a {
+    display: block;
+    width: fit-content;
+    /* margin: 0 auto; */
+  }
+  
+}

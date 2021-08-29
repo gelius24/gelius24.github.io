@@ -6,12 +6,12 @@
     display: block;
     position: fixed;
     height: fit-content;
-    width: 100%;
-    height: 100%;
+    padding: 10px;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(33, 32, 41);
     z-index: 100;
     top: 0;
     bottom: 0;
@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
   }
   .modal h3 {
     font-size: 1.3rem;
@@ -34,7 +33,6 @@
     margin-top: 10px;
     font-size: 1.2rem;
     text-align: center;
-    width: 95%;
   }
   .show_p{
     display: block !important;
@@ -46,7 +44,7 @@
   }
   .modal ul {
     list-style: none;
-    background-color: #ebebeb;
+    background-color: #324b66;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,32 +62,17 @@
   }
   .modalCloseButton {
     color: white;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(33, 32, 41);
     border: none;
     font-size: 28px;
     /* font-size: 40px; */
     position: absolute;
-    top: -40px;
-    right: 10%;
+    top: -10px;
+    right: 10px;
     cursor: pointer;
   }
   
   @media (min-width: 650px) {
-    .show{
-      width: 80%;
-      height: 80%;
-      max-width: 600px;
-    }
-    .modal ul{
-      width: fit-content;
-      flex-direction: row;
-      flex-wrap: wrap;
-      max-width: 900px;
-      gap: 18px;
-    }
-  }
-  
-  /* @media (min-width: 650px) {
     .show{
       max-width: 900px;
       padding: 30px;
@@ -110,4 +93,4 @@
     .modal p{
       width: 80%;
     }
-  } */
+  }
