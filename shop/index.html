@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/wg-shop-opacity.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techno Shop</title>
+    <title>My Shop</title>
     <link rel="stylesheet" href="css.css">
     <!-- <script src="bg.js" defer></script> -->
     <script src="cat.js" defer></script>
 </head>
 <body>
     <header>
+        <div class="title">
+            <img class="logo" src="img/wg-shop-opacity.png" alt="">
         <h1>My Shop</h1>
+        </div>
         <!-- <span id='burger' onclick="handleMenuClick()"></span> -->
         <nav>
             <ul>
@@ -30,23 +36,32 @@
             <option value="light">Lumière</option>
             <option value="travel">Voyage</option>
             <option value="cuisine">Cuisine</option>
+            <option value="electronic">Électronique</option>
         </select>
     </div>
 
     <div class="products">
-            <div class="product smart light">
+        <div class="product electronic">
+            <h3>Chargeur mural USB 6 port</h3>
+            <img src="https://i5.walmartimages.com/asr/391abb3f-68fe-4db2-b23b-0c75019b0f2e.ce474304bd8cb7d4c558e86a9073f48b.jpeg" style="padding: 15px;">
+            <div class="details">
+                <p class="price">Prix: 57,99$</p>
+                <p>Qty: 10</p>
+            </div>
+        </div>
+            <div class="product smart light electronic">
                 <h3>Interupteur intelligent</h3>
                 <img src="https://i5.walmartimages.ca/images/Enlarge/464/182/6000203464182.jpg">
                 <div class="details">
-                    <p class="price">24,99$</p>
+                    <p class="price">Prix: 24,99$</p>
                     <p class="qty">Qty: 12</p>
                 </div>
             </div>
-            <div class="product light">
+            <div class="product light electronic">
                 <h3>Cable Lumineux</h3>
                 <img src="https://i5.walmartimages.com/asr/0e1d9016-5f10-4750-9243-860c1bcabfcc.789dbe2331ef98d1452c044b1a1c1201.jpeg">
                 <div class="details">
-                    <p>24,99$</p>
+                    <p class="price">Prix: 24,99$</p>
                     <p>Qty: 6</p>
                 </div>
             </div>
@@ -55,23 +70,23 @@
                 <img src="https://i5.walmartimages.com/asr/8327b0bc-a346-40f2-a8ef-b5d575c948d4.8eea5592936df86c95964d051e6c09ef.jpeg
                 ">
                 <div class="details">
-                    <p>24,99$</p>
+                    <p class="price">Prix: 24,99$</p>
                     <p>Qty: 8</p>
                 </div>
             </div>
-            <div class="product smart">
+            <div class="product smart electronic">
                 <h3>Montre intelligente</h3>
                 <img src="https://i5.walmartimages.com/asr/f5d613d7-d870-46ad-8972-9676266587c1_1.72bde064e72cfd86e73eb50c2efecf48.jpeg">
                 <div class="details">
-                    <p>24,99$</p>
+                    <p class="price">Prix: 24,99$</p>
                     <p>Qty: 3</p>
                 </div>
             </div>
-            <div class="product smart">
+            <div class="product smart electronic">
                 <h3>Aspirateur intelligent</h3>
                 <img src="img/aspirateur1.jpg">
                 <div class="details">
-                    <p>137,99$</p>
+                    <p class="price">Prix: 137,99$</p>
                     <p>Qty: 10</p>
                 </div>
             </div>
@@ -79,23 +94,23 @@
                 <h3>Aspirateur pour animaux</h3>
                 <img src="https://i5.walmartimages.ca/images/Enlarge/662/947/6000201662947.jpg">
                 <div class="details">
-                    <p>84,99$</p>
+                    <p class="price">Prix: 84,99$</p>
                     <p>Qty: 5</p>
                 </div>
             </div>
-            <div class="product travel">
+            <div class="product travel electronic">
                 <h3>Convertisseur de voyage universel</h3>
                 <img src="https://i5.walmartimages.com/asr/7c832fdc-076d-4e6f-bcf1-4f9afdcdf23e_1.5343b171dc6005d8a4ffdf2571b8e167.jpeg">
                 <div class="details">
-                    <p>20,99$</p>
+                    <p class="price">Prix: 20,99$</p>
                     <p>Qty: 30</p>
                 </div>
             </div>
-            <div class="product smart">
+            <div class="product smart electronic">
                 <h3>Brosse à dents électrique</h3>
                 <img src="https://i5.walmartimages.ca/images/Enlarge/141/643/6000202141643.jpg">
                 <div class="details">
-                    <p>164,99$</p>
+                    <p class="price" style="top:14%">Prix: 164,99$</p>
                     <p>Qty: 10</p>
                 </div>
             </div>
@@ -103,15 +118,15 @@
                 <h3>Système de cuisine Professional Plus Ninja</h3>
                 <img src="https://i5.walmartimages.ca/images/Enlarge/490/599/6000203490599.jpg" style="padding: 15px;">
                 <div class="details">
-                    <p>164,99$</p>
+                    <p class="price">Prix: 164,99$</p>
                     <p>Qty: 5</p>
                 </div>
             </div>
-            <div class="product smart">
+            <div class="product smart electronic">
                 <h3>Caméra de surveillance</h3>
                 <img src="https://i5.walmartimages.com/asr/92cfed0e-bfb2-4cc9-855e-92b07d850b06.4eef13c2b783ed2f014ab8a4077d201e.jpeg" style="padding: 15px;">
                 <div class="details">
-                    <p>49,99$</p>
+                    <p class="price">Prix: 49,99$</p>
                     <p>Qty: 2</p>
                 </div>
             </div>

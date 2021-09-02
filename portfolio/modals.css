@@ -30,7 +30,7 @@
     font-size: 1.3rem;
   }
   .modal p {
-    display: none;
+    /* display: none; */
     margin-top: 10px;
     font-size: 1.2rem;
     text-align: center;
@@ -69,7 +69,7 @@
     font-size: 28px;
     /* font-size: 40px; */
     position: absolute;
-    top: -40px;
+    top: 0px;
     right: 10%;
     cursor: pointer;
   }

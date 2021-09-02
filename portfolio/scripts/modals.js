@@ -40,15 +40,15 @@ function listen() {
     });
   });
 
-  descs.map((desc) => {
-    addEventListener("resize", () => {
-      if(screen.width < 1116){
-        descs[desc.id.charAt(desc.id.length - 1) -1].classList.add("show_p")
-      } else {
-        descs[desc.id.charAt(desc.id.length - 1) -1].classList.remove("show_p")
-      }
-    });
-  });
+  // descs.map((desc) => {
+  //   addEventListener("resize", () => {
+  //     if(screen.width < 1116){
+  //       descs[desc.id.charAt(desc.id.length - 1) -1].classList.add("show_p")
+  //     } else {
+  //       descs[desc.id.charAt(desc.id.length - 1) -1].classList.remove("show_p")
+  //     }
+  //   });
+  // });
 }
 set_ids();
 listen()
