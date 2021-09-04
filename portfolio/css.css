@@ -40,8 +40,6 @@ header i {
 /*--------------------------------*/
 .hero {
   height: 250px;
-  /* background: linear-gradient(90deg, rgba(184,87,31,1) 0%, rgba(232,104,30,1) 35%, rgba(160,50,167,1) 100%); */
-  /* background: linear-gradient(90deg, rgba(90,97,95,1) 0%, rgba(45,109,133,1) 39%, rgba(75,158,177,1) 100%); */
   background-color: var(--header-color);
   color: white;
   display: grid;
@@ -106,7 +104,14 @@ header i {
 }
 /* INTRO */
 /*------------------------------------------------*/
- .projets{
+h2{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.projets{
   background-color: rgba(211, 211, 211, 0.199);
 } 
 .projet {
@@ -206,7 +211,7 @@ footer{
   header {
     height: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
     font-size: 1.5rem;
   }
