@@ -15,6 +15,7 @@ header {
   font-size: 1.8rem;
   height: 25vh;
   font-size: 100%;
+  font-size: 3vw;
 }
 header a {
   color: black;
@@ -41,7 +42,7 @@ header i {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  height: fit-content;
+  height: 50vh;
 }
 .intro img {
   width: 80%;
@@ -105,9 +106,16 @@ header i {
   }
 }
 /* INTRO */
+
+/* INTRO BOTOM */
 .bottom-intro {
   padding-top: 10px;
   height: fit;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .arw {
   display: block;
@@ -117,12 +125,14 @@ header i {
   margin-top: 10px;
 }
 .bottom-intro h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
   margin-top: 10px;
 }
+/*INTRO BOTOM*/
+/*-----------------------------------------------------*/
 .projects {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,21 +146,21 @@ header i {
   align-items: center;
 }
 .projectIMG {
-  width: 300px;
-  height: 200px;
+  width: 90%;
+  max-width: 400px;
   cursor: pointer;
 }
-
 .projectIMG:hover{
   opacity: 0.5;
 }
 
+
 @media (min-width: 760px) {
   header {
-    height: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
+    font-size: 25px;
   }
 
   .projects {
