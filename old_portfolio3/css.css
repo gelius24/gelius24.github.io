@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  background-color: rgb(226, 222, 222);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 100%;
+}
+/* HEADER */
+header {
+  padding: 10px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  background-color: var(--header-color);
+  font-size: 1.8rem;
+  height: 25vh;
+  font-size: 100%;
+  font-size: 20px;
+}
+header a {
+  color: black;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+}
+header > * + * {
+  margin-top: 12px;
+}
+header i {
+  margin-top: 4px;
+  cursor: pointer;
+}
+.topbar-box p {
+  word-spacing: -8px;
+}
+/* HEADER */
+
+/* INTRO */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: 50vh;
+}
+.intro img {
+  width: 80%;
+  max-width: 30vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  order: -1;
+}
+.introBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introBox {
+  font-size: 20px;
+}
+.introBox h1 {
+  font-size: 70px;
+  margin-top: 10px;
+}
+.introBox p {
+  text-align: center;
+  margin-top: 10px;
+}
+#woody {
+  position: relative;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2.7rem;
+}
+#woody::after,
+#woody::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  right: 0;
+}
+#woody::before {
+  background-color: rgb(226, 222, 222);
+  height: 50px;
+  animation: write 3s steps(12) 1s forwards;
+}
+#woody::after {
+  width: 0.05em;
+  background-color: black;
+  animation: write 3s steps(12) 1s forwards, blink 600ms ease-out 0s 12 forwards;
+}
+
+@keyframes write {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+/* INTRO */
+
+/* INTRO BOTOM */
+.bottom-intro {
+  padding-top: 10px;
+  height: fit;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.arw {
+  display: block;
+  width: 15%;
+  max-width: 80px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.bottom-intro h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+/*INTRO BOTOM*/
+/*-----------------------------------------------------*/
+.projects {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-box + .project-box{
+  margin-top: 30px;
+}
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectIMG {
+  width: 90%;
+  max-width: 400px;
+  cursor: pointer;
+}
+.projectIMG:hover{
+  opacity: 0.5;
+}
+
+
+@media (min-width: 760px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    font-size: 25px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}

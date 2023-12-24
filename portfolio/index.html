@@ -1,251 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="scripts/modals.js" defer></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Portfolio - WG</title>
-    <link rel="stylesheet" href="css.css" />
-    <link rel="stylesheet" href="modals.css" />
-    <meta name="theme-color" content="rgb(31, 31, 31)">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woody - portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-      <div class="header__box">
-        <i class="far fa-envelope"></i>
-        <p style="margin-left: 6px; cursor: default">gelius24@hotmail.com</p>
-      </div>
-      <a href="https://github.com/gelius24" target="_blank"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/gelius24/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <div class="header__box">
-        <img src="img/sheet-logo.svg" />
-        <a href="../CV-WoodyGelius.pdf" target="_blank">Mon CV</a>
-      </div>
+        <nav>
+            <ul>
+                <li>Mes projets</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
     </header>
-    <div class="hero">
-      <div class="hero__text intro__text">
-        <p>Bonjour, je suis un developpeur web front-end. Je m'appelle</p>
-        <h1 id="woody">Woody Gelius</h1>
-      </div>
-      <div class="bottom-bar"></div>
-    </div>
 
-    <h2 class="slideAnimation">Mes Projets :</h2>
-    <div class="projets">
-      <div class="projet">
-        <h3>Spotify</h3>
-        <img src="img/spotify (2).png" />
-        <div class="btns">
-          <button class="modalButton">Détails</button>
-          <a href="https://spotifywg.herokuapp.com/" target="_blank">Voir</a>
-          <a href="">Code</a>
+    <section class="intro">
+        <div class="h1-container">
+            <h1>Développeur Web Front End</h1>
+            <p class="autodidacte"></p>
         </div>
-        <!-- FENÊTRE MODAL -->
-        <div class="modal-container">
-          <div class="modal">
-            <button class="modalCloseButton">X</button>
-            <h3>Spotify</h3>
-            <p class="modalP">
-              Interface basé sur l'application web de Spotify. Il y est possible de jouer 30 secondes de certaines chansons (l'api de spotify requiert un compte premium pour la lecture complète des chansons).
-            </p>
-            <h4>J'ai utilisé les technologies suivantes :</h4>
-            <ul>
-              <li>SpotifyWeb Api</li>
-              <li>React js</li>
-              <li>react context api</li>
-              <li>Node js</li>
-              <li>dotenv</li>
-              <li>Heroku</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <p class="woody">Woody Gelius</p>
+    </section>
 
-      <div class="projet">
-        <h3>Netflix</h3>
-        <img
-          src="https://gelius24.github.io/portfolioV1/img/netflix-project1.png"
-        />
-        <div class="btns">
-          <button class="modalButton">Détails</button>
-          <a href="https://netflix-full-build-29831.web.app/" target="_blank"
-            >Voir</a
-          >
-          <a href="https://github.com/gelius24/netflix-full-build" target="_blank">Code</a>
-        </div>
-        <!-- FENÊTRE MODAL -->
-        <div class="modal-container">
-          <div class="modal">
-            <button class="modalCloseButton">X</button>
-            <h3 style="color: #e50914">Netflix</h3>
-            <p class="modalP">
-              Copie du site web de Netflix. Il y est possible de se créer un
-              compte et de simuler l'achat d'un abonnement via stripe. Le numéro de carte de crédit 4242 4242 4242 4242 simule un paiement réussie.
-            </p>
+    <div class="about">
+        <img src="images/me-1.png" alt="pic" class="woody-img">
+        <div class="about-right-container">
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus doloribus ea amet assumenda ut soluta. Eligendi pariatur, aperiam rem possimus natus expedita. Voluptatibus reiciendis explicabo id voluptatem veritatis expedita!</p>
+            <div class="skills-container">
+                <div class="skill skill-html"></div>
+                <div class="skill skill-css"></div>
+                <div class="skill skill-js"></div>
+                <div class="skill skill-git"></div>
+                <div class="skill skill-github"></div>
+                <div class="skill skill-bootstrap"></div>
+                <div class="skill skill-tailwind"></div>
+                <div class="skill skill-react"></div>
+                <div class="skill skill-next"></div>
+            </div>
             
-            <ul>
-              <h4>J'ai utilisé les technologies suivantes :</h4>
-              <li>The movie Database API</li>
-              <li>React JS</li>
-              <li>Redux</li>
-              <li>React Router</li>
-              <li>Firebase (Hébergeur, Firestore & l'extension Stripe)</li>
-              <li>Stripe</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="projet">
-        <h3>Amazon</h3>
-        <img src="img/amazon.png" />
-        <div class="btns">
-          <button class="modalButton">Détails</button>
-          <a href="https://amazon-clone-gelius24.vercel.app/" target="_blank"
-            >Voir</a
-          >
-          <a href="">Code</a>
-        </div>
-        <!-- FENÊTRE MODAL -->
-        <div class="modal-container">
-          <div class="modal">
-            <button class="modalCloseButton">X</button>
-            <h3>Amazon</h3>
-            <p class="modalP">
-              Copie du site web Amazon. Il y est possible de se connecté via un compte google et de simuler l'achat d'articles.
-            </p>
-            <h4>J'ai utilisé les technologies suivantes :</h4>
-            <ul>
-              <li>Fake Store API</li>
-              <li>Next.js (NextAuth)</li>
-              <li>Redux</li>
-              <li>Tailwind CSS</li>
-              <li>Firebase (Firestore)</li>
-              <li>Stripe (Checkout Page, Webhook)</li>
-              <li>Vercel</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="projet">
-        <h3>Google</h3>
-        <img src="https://gelius24.github.io/portfolioV1/img/google.png" />
-        <div class="btns">
-          <button class="modalButton">Détails</button>
-          <a href="https://woogle.vercel.app/" target="_blank">Voir</a>
-          <a href="">Code</a>
-        </div>
-        <!-- FENÊTRE MODAL -->
-        <div class="modal-container">
-          <div class="modal">
-            <button class="modalCloseButton">X</button>
-            <h3>Google</h3>
-            <p class="modalP">
-              Ce projet imite le moteur de recherche google. Il est possible de faire 100 demandes de recherche avec l'api de google avant de devoir commencer à payer (5$ par tranche de 1000 demandes).
-            </p>
-            <h4>J'ai utilisé les technologies suivantes :</h4>
-            <ul>
-              <li>Google Custom Search JSON API</li>
-              <li>Next.js</li>
-              <li>Tailwind CSS</li>
-              <li>Vercel</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="projet">
-        <h3>Banque Tangerine</h3>
-        <img src="https://gelius24.github.io/portfolioV1/img/tangerine.png" />
-        <div class="btns">
-          <button class="modalButton">Détails</button>
-          <a href="https://gelius24.github.io/tangerine/" target="_blnak"
-            >Voir</a
-          >
-          <a href="">Code</a>
-        </div>
-        <!-- FENÊTRE MODAL -->
-        <div class="modal-container">
-          <div class="modal">
-            <button class="modalCloseButton">X</button>
-            <h3 style='color: #EA7024;'>Tangerine</h3>
-            <p class="modalP">
-              Copie du site web de la banque Tangerine. Ce projet m'à été utile pour créer une page réactive.
-            </p>
-            <h4>J'ai utilisé les technologies suivantes :</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JS</li>
-              <li>GitHub Pages</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="projet">
-        <h3>Reddit</h3>
-        <img src="img/reddit.png" />
-        <div class="btns">
-          <button class="modalButton">Détails</button>
-          <a href="https://gelius24.github.io/reddit/" target="_blank">Voir</a>
-          <a href="">Code</a>
-        </div>
-        <!-- FENÊTRE MODAL -->
-        <div class="modal-container">
-          <div class="modal">
-            <button class="modalCloseButton">X</button>
-            <h3>Reddit</h3>
-            <p class="modalP">
-              Copie de la page d'acceuil reddit sur un compte ne suivant aucun
-              contenu. Ce projet m'à été utile pour créer une page réactive.
-            </p>
-            <h4>J'ai utilisé les technologies suivantes :</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>GitHub Pages</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="projet">
-        <h3 style="font-size: 1.1rem;">Projets React Freecodecamp.com</h3>
-        <div class="projet__images">
-          <a href="https://gelius24-drums.netlify.app/" target="_blank"><img src="img/drums.png" alt=""></a>
-          <a href="https://jscalculatorwg.netlify.app/" target="_blank"><img src="img/calc (2).jpg" alt=""></a>
-          <a href="https://quote-machinewg.netlify.app/" target="_blank"><img src="img/citations (2).jpg" alt=""></a>
-          <a href="https://markdown-previewerwg.netlify.app/" target="_blank"><img src="img/md (2).jpg" alt=""></a>
         </div>
         
     </div>
-
-  </div>
-    <footer>Woody Gelius - 2021</footer>
-  </body>
+    
+    <script src="app.js"></script>
+</body>
 </html>
+
+<!--
+    html css js react.js next.js git github bootstrap tailwind figma node j.s
+-->

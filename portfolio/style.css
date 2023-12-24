@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*, *::before, *::after {box-sizing: border-box;}
+*{margin: 0; padding: 0;}
+
+html {
+   font-family: sans-serif; 
+}
+
+/*  HEADER */
+header {
+    padding-top: 12px;
+    height: 30vh;
+}
+
+ul {
+    background-color: #F9F5F4;
+    display: flex;
+    justify-content: end;
+    gap: 3vw;
+    padding-right: 4vw;
+    list-style: none;
+    font-family: "IBM Plex Mono";
+    font-size: 1.6rem; 
+}
+
+li {
+    cursor: pointer;
+}
+
+/* INTRO */
+section.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.h1-container {
+    display: flex;
+    flex-direction: column;
+}
+h1 { font-size: 5rem; font-weight: 300; }
+.txt-container{ display: inline-block;}
+.autodidacte{
+    align-self: flex-end;
+    font-size: 1.5rem;
+}
+p.woody{
+    font-size: 6.5rem;
+}
+
+@media (max-width: 1160px) {
+    h1{ font-size: clamp(1rem, 4.5vw + 1rem, 5.5rem); }
+    p.woody{ font-size: clamp(1.1rem, 4.6vw + 1rem, 5.6rem);}
+}
+/* ABOUT ME*/
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.woody-img {
+    display: block;
+    width: 300px;
+    height: 500px;
+    max-width: 100%;
+    border-radius: 5%;
+    margin-bottom: 100px;
+}
+
+.about-right-container{
+    background-color: lightblue;
+    height: 500px;
+    width: auto;
+}
+
+p.about-text {
+    background-color: burlywood;
+    width: 40vw;
+    font-size: 1.5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 110px);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 120px;
+    background-color: pink;
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.skill-html {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/langfr-130px-HTML5_logo_and_wordmark.svg.png);
+    
+}
