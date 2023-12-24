@@ -72,13 +72,11 @@ p.woody{
 }
 
 .about-right-container{
-    background-color: lightblue;
     height: 500px;
     width: auto;
 }
 
 p.about-text {
-    background-color: burlywood;
     width: 40vw;
     font-size: 1.5rem;
 }
@@ -92,16 +90,20 @@ p.about-text {
     align-items: center;
     margin-top: 30px;
     margin-left: 120px;
-    background-color: pink;
+    
 }
 
 .skill {
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5%;
+    border: 1px  solid black;
+    
 }
 
-.skill-html {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/langfr-130px-HTML5_logo_and_wordmark.svg.png);
-    
+.skill img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
 }
