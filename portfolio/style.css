@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 *, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
-
 :root{
     --titleSize: 6rem;
     --nameSize: 5rem;
     --normalSize: 1.2rem;
     --maxWidth: 1335px;
+    --projectWidth : 500px;
+    --projectHeight: 300px;
+    --navBg: lightgray;
+    --projetBg: rgb(240, 240, 240);
+    --black: black;
 }
 
 body {
@@ -16,11 +19,15 @@ body {
     font-size: var(--normalSize);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /***************************************************************/
-
+/* NAV BAR */
 ul {
     font-family: 'DotGothic16', sans-serif;
-    background-color: lightgray;
+    background-color: var(--navBg);
     display: flex;
     justify-content: end;
     gap: 20px;
@@ -33,7 +40,7 @@ li:hover {
    cursor: pointer;
    scale: 1.1; 
 }
-/*WOODY GELIUS*/
+/* HERO SECTION */
 .hero{
     position: absolute;
     top: 50%;
@@ -103,13 +110,14 @@ section.about .woody-img {
     height: 52px;
     width: 103px;
     object-fit: contain;
-    /* max-width: 136px;
-    max-height: 67px; */
     display: block;
 }
+.nextjs{
+    content:url("images/skills/nextjs-13-logo.svg");
+}
 
-/* PROJETS*/
-section.section-projet{
+/* PROJETS*/ 
+.section-projet{
     width: 90%;
     max-width: 1335px;
     margin-inline: auto;
@@ -123,58 +131,66 @@ section.section-projet{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 50px;
 }
 
 .section-projet h2{
     font-size: var(--titleSize);
+    margin-bottom: 25px;
 }
 
 .projet-card {
-    margin: auto;
+   width: 400px;
+   height: 300px;
+   margin-bottom: 50px;
    display: flex;
    flex-direction: column;
    align-items: center;
    transition: scale 1s;
 }
-.projet-card:hover{
-    scale: 1.05;
-}
+.projet-card:hover{ scale: 1.05; }
 
 .projet-box {
-    background-color: rgb(240, 240, 240);
-    border: 1px solid black;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--projetBg);
+    border: 1px solid var(--black);
     padding: 10px;
+    
 }
 
-.section-projet img{
+.projet-card img{
     border-radius: 10px;
-    width: 600px;
-    height: 300px;
-    max-width: 100%;
+    width: 95%;
+    height: 200px;
+    margin: auto;
     display: block;
     cursor: pointer;
     transition: scale 1s;
 }
 
 .technos{
+    position: relative;
+    width: 80%;
+    height: 80px;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    
-    padding: 8px 0 8px 5px;
-    /* padding-bottom: 10px;
-    padding-left: 5px; */
+    margin-block: 15px;
 }
 
 .technos p {
     background-color: lightgray;
+    height: fit-content;
     border-radius: 6px;
+    padding: 2px 6px;
 }
 
 .plusBtn{
-    margin-left: auto;
-    margin-right: 20px;
+    position: absolute;
+    top: 12px;
+    right: -20%;
     align-self: center;
     cursor: pointer;
     transition: transform 0.5s;
@@ -183,8 +199,21 @@ section.section-projet{
     transform: scale(1.2);
 }
 
-/*breakpoint*/
-@media (width < 750px) {
+/* MEDIA QUERYS */
+/*mobile landscape*/
+@media (max-height: 530px) {
+    .hero-box h1 {
+        font-size: 2.5rem;
+    }
+}
+/*mobile portrait*/
+@media (max-width: 769px) {
+    :root{
+        --titleSize: 3.2rem;
+        --nameSize: 5rem;
+        --normalSize: 1.2rem;
+    }
+
     section.about{
         display: flex;
         flex-direction: column;
@@ -198,38 +227,8 @@ section.section-projet{
         width: 90%;
     }
 
-    .skills{
-        gap: 0;
-        row-gap: 10px;
-        grid-template-columns: repeat(4, 1fr)
-    }
-}
-
-/*tablet*/
-@media (width < 1000px) {
-    section.section-projet{
-        width: 100%;
-    }
-    .projets {
-        flex-direction: column;
-    }
-    .projet-card{
-        width: 80%;
-    }
-}
-
-
-
-/*mobile portrait*/
-@media (max-width: 580px) {
-    :root{
-        --titleSize: 3.2rem;
-        --nameSize: 5rem;
-        --normalSize: 1.2rem
-    }
-
     .skills {
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, 1fr);
     }
 
     section.section-projet{
@@ -243,12 +242,43 @@ section.section-projet{
     }
 }
 
-/*mobile landscape*/
-@media (max-height: 530px) {
-    .hero-box h1 {
-        font-size: 2.5rem;
-    }
+/*breakpoint*/
+@media (width < 760px) {
+    
 }
 
+/*tablet*/
+@media (width < 1000px) {
+    section.section-projet{
+        width: 90%;
+    }
+    
+   
+}
 
+/**/
+/* DARK MODE*/
+/**/
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --navBg: #3a413c71;
+        --black: white;
+        --projetBg: #120926;
+    }
+
+    body {
+        background-color: #090916;
+        color: rgb(219, 219, 219);
+    }
+
+    .technos p{
+        background-color: white;
+        color: black;
+    }
+
+    .nextjs {
+        content:url("images/skills/nextjswhite.png");
+    }
+}
 
