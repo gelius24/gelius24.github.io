@@ -105,23 +105,23 @@ section.about .woody-img {
 }
 
 .skills {
-  --cellSize: 100px;
+  --cellSize: 102px;
   grid-area: 2 / 2 / 3 / 3; /*row-s col-s row-e col-e*/
   display: grid;
-  grid-template-columns: var(--cellSize) var(--cellSize) var(--cellSize);
-  gap: 10px;
-}
-
-.item {
-  border: 1px solid lightgray;
-  border-radius: 10px;
+  grid-template-columns:  repeat(3, var(--cellSize));
+  grid-template-rows: repeat(3, calc(var(--cellSize)/2));
+  align-items: center;
+  justify-items: center;
+  row-gap: 10px;
 }
 
 .skills img {
-  height: 52px;
-  width: 103px;
+  height: 55px;
+  width: 55px;
   object-fit: contain;
   display: block;
+  border: 1px solid lightgray;
+  border-radius: 900px;
 }
 .nextjs {
   content: url("images/skills/nextjs-13-logo.svg");
@@ -167,7 +167,6 @@ section.about .woody-img {
 .projet-box {
   width: 100%;
   height: fit-content;
-  /* background-color: var(--projetBg); */
   /* border: 1px solid var(--black); */
   padding: 10px;
 }
