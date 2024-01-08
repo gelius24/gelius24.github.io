@@ -167,13 +167,15 @@ section.about .woody-img {
 .projet-box {
   width: 100%;
   height: fit-content;
-  background-color: var(--projetBg);
-  border: 1px solid var(--black);
+  /* background-color: var(--projetBg); */
+  /* border: 1px solid var(--black); */
   padding: 10px;
 }
 
 .projet-card img {
+  border: 1px solid black;
   border-radius: 10px;
+  padding: 5px;
   width: 95%;
   height: 200px;
   margin: auto;
@@ -199,7 +201,11 @@ section.about .woody-img {
   padding: 2px 6px;
 }
 
-.plusBtn {
+.see-more {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 8px;
+  padding-inline: 16px;
   position: absolute;
   top: 12px;
   right: -20%;
@@ -207,7 +213,7 @@ section.about .woody-img {
   cursor: pointer;
   transition: transform 0.5s;
 }
-.plusBtn:hover {
+.see-more:hover {
   transform: scale(1.2);
 }
 
