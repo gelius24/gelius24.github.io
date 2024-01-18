@@ -1,0 +1,31 @@
+/*mobile portrait*/
+@media (max-width: 769px) { 
+  section.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-width: unset;
+    width: 90%;
+  }
+  section.about p {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/*modal*/
+@media (width <= 1310px) {
+  .modal {
+    flex-direction: column;
+    padding-block: 30px;
+    gap: 20px !important;
+  }
+
+  .fa-x {
+   font-size: 1.4rem !important;
+   position: unset !important;
+  }
+}
